@@ -18,70 +18,171 @@
 
     <title>Boolando</title>
 </head>
-<body class="debug">
+<body>
 
     <header>
-        <nav class="flex-r boxed">
-            <div>
-                <ul>
-                    <li>Donna</li>
-                    <li>Uomo</li>
-                    <li>Bambini</li>
+        <nav class="boxed flex-r jc-between al-center">
+            <div class="cl flex-c al-start">
+                <ul class="flex-r gap-15">
+                    <li><a href="#">Donna</a></li>
+                    <li><a href="#">Uomo</a></li>
+                    <li><a href="#">Bambini</a></li>
                 </ul>
             </div>
-            <div>
-                <img src="media/boolean-logo.png" alt="Boolean Logo">
+            <div class="cl flex-c grow-1 al-center">
+                <img class="logo" src="media/boolean-logo.png" alt="Boolean Logo">
             </div>
-            <div>
-                <ul>
-                    <li><i class="ri-user-line"></i></li>
-                    <li><i class="ri-heart-line"></i></li>
-                    <li><i class="ri-shopping-bag-fill"></i></li>
+            <div class="cl flex-c al-end">
+                <ul class="flex-r gap-15">
+                    <li><a href="#"><i class="ri-user-line"></i></a></li>
+                    <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                    <li><a href="#"><i class="ri-shopping-bag-fill"></i></a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section class="boxed flex-r">
             <div class="product-card">
                 <div class="product-top">
-                    <img src="media/1.webp" alt="Product Image">
-                    <div class="whish-list">
-                        <button class="btn-wishlist"></button>
-                    </div>
-                    <div class="product-tags">
-                        <span>-80%</span>
-                        <span>Sonstenibilità</span>
+                    <img class="img-hide" src="media/1.webp" alt="Product Image">
+                    <img class="img-show" src="media/1b.webp" alt="Product Image">
+                    <button class="btn-wishlist"><i class="ri-heart-fill"></i></button>
+                    <div class="product-tags flex-r gap-5">
+                        <span class="discount">-80%</span>
+                        <span class="type">Sonstenibilità</span>
                     </div>
                 </div>
                 <div class="product-bottom">
                     <small>Levi's</small>
                     <p>Relaxed Fit Tee Unisex</p>
                     <div>
-                        <span class="price">14,99€</span>
-                        <span class="price">22,99€</span>
+                        <span class="price offer">14,99€</span>
+                        <span class="price actual">22,99€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-top">
+                    <img class="img-hide" src="media/2.webp" alt="Product Image">
+                    <img class="img-show" src="media/2b.webp" alt="Product Image">
+                    <button class="btn-wishlist"><i class="ri-heart-fill"></i></button>
+                    <div class="product-tags flex-r gap-5">
+                        <span class="discount">-30%</span>
+                        <span class="type display-none">Sonstenibilità</span>
+                    </div>
+                </div>
+                <div class="product-bottom">
+                    <small>Guess</small>
+                    <p>Roses Tee</p>
+                    <div>
+                        <span class="price offer">20,99€</span>
+                        <span class="price actual">20,00€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-top">
+                    <img class="img-hide" src="media/3.webp" alt="Product Image">
+                    <img class="img-show" src="media/3b.webp" alt="Product Image">
+                    <button class="btn-wishlist"><i class="ri-heart-fill"></i></button>
+                    <div class="product-tags flex-r gap-5">
+                        <span class="discount">-30%</span>
+                        <span class="type display-none">Sonstenibilità</span>
+                    </div>
+                </div>
+                <div class="product-bottom">
+                    <small>Come Zucchero Filato</small>
+                    <p>Voglia di colori pastello</p>
+                    <div>
+                        <span class="price offer">129,99€</span>
+                        <span class="price actual">184,99€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-top">
+                    <img class="img-hide" src="media/4.webp" alt="Product Image">
+                    <img class="img-show" src="media/4b.webp" alt="Product Image">
+                    <button class="btn-wishlist"><i class="ri-heart-fill"></i></button>
+                    <div class="product-tags flex-r gap-5">
+                        <span class="discount">-50%</span>
+                        <span class="type">Sonstenibilità</span>
+                    </div>
+                </div>
+                <div class="product-bottom">
+                    <small>Levi's</small>
+                    <p>Tee Unisex</p>
+                    <div>
+                        <span class="price offer">14,99€</span>
+                        <span class="price actual">20,00€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-top">
+                    <img class="img-hide" src="media/5.webp" alt="Product Image">
+                    <img class="img-show" src="media/5b.webp" alt="Product Image">
+                    <button class="btn-wishlist"><i class="ri-heart-fill"></i></button>
+                    <div class="product-tags flex-r gap-5">
+                        <span class="discount display-none">-30%</span>
+                        <span class="type display-none">Sonstenibilità</span>
+                    </div>
+                </div>
+                <div class="product-bottom">
+                    <small>Maya Deluxe</small>
+                    <p>Stripe Bodice</p>
+                    <div>
+                        <span class="price offer">99,99€</span>
+                        <span class="price actual display-none">184,99€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-top">
+                    <img class="img-hide" src="media/6.webp" alt="Product Image">
+                    <img class="img-show" src="media/6b.webp" alt="Product Image">
+                    <button class="btn-wishlist"><i class="ri-heart-fill"></i></button>
+                    <div class="product-tags flex-r gap-5">
+                        <span class="discount display-none">-30%</span>
+                        <span class="type">Sonstenibilità</span>
+                    </div>
+                </div>
+                <div class="product-bottom">
+                    <small>Espirit</small>
+                    <p>Maglione - Black</p>
+                    <div>
+                        <span class="price offer">29,99€</span>
+                        <span class="price actual display-none">184,99€</span>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="">
-        <div class="company-info">
-            <h4>Boolando S.r.l</h4>
-            <small><a href="#">Informazioni legai</a></small>
-            <small><a href="#">Informativa sulla privacy</a></small>
-            <small><a href="#">Diritto di recesso</a></small>
-        </div>
-        <div class="social">
-            <h5>Trovaci anche su</h5>
-            <div>
-                <i class="ri-twitter-fill"></i>
-                <i class="ri-facebook-box-fill"></i>
-                <i class="ri-instagram-fill"></i>
-                <i class="ri-pinterest-fill"></i>
-                <i class="ri-youtube-fill"></i>
+    <footer>
+        <div class="boxed flex-r jc-between">
+            <div class="company-info">
+                <h4>Boolando S.r.l</h4>
+                <small><a href="#">Informazioni legai</a></small>
+                <small><a href="#">Informativa sulla privacy</a></small>
+                <small><a href="#">Diritto di recesso</a></small>
+            </div>
+            <div class="social">
+                <h5>Trovaci anche su</h5>
+                <div>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-facebook-box-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                    <i class="ri-pinterest-fill"></i>
+                    <i class="ri-youtube-fill"></i>
+                </div>
             </div>
         </div>
     </footer>
