@@ -120,21 +120,27 @@ section{
     margin-bottom: 4%;
 }
 
+.product-card .product-top{
+    width: 100%;
+    position: relative;
+}
+
 .product-card .product-top img{
     width: 100%;
 }
 
 .img-show{
-    display: none;
+    display: none ;
 }
 
 .product-top:hover .img-show{
-    display: block;
+    display: inline-block;
 }
 
 .product-top:hover .img-hide{
     display: none;
 }
+
 
 .btn-wishlist{
     position: absolute;
